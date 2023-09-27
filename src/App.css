@@ -74,6 +74,45 @@ body {
     margin: 5px;
 }
 
+.active{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 5px;
+}
+
+.mbMenu{
+    display: none;
+}
+
+.mbMenuBar{
+    position: absolute;
+    top: 5rem;
+    right: -3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+    height: fit-content;
+    min-width: 15rem;
+    border-radius: 1rem;
+    background: rgb(40, 40, 40)
+}
+
+.menu-logo{
+   object-fit: cover;
+   width: 60px;
+   height: 60px;
+   margin:20px 0;
+}
+
+.listItem{
+   color: white;
+   padding: 0.5rem 3rem;
+   margin: 0.2rem;
+   background: rgb(30, 30, 30);
+}
+
+
 #intro {
     /* display: flex;
     justify-content: space-between; */
@@ -292,6 +331,7 @@ body {
     gap: 20px;
     position: sticky;
     bottom: 0;
+
 }
 
 .gitImg {
@@ -313,5 +353,21 @@ body {
     .portfolioImg {
         height: 30vw;
         width: 30vw;
+    }
+}
+
+@media screen  and (max-width: 720px){
+    .mbMenu{
+        display: flex;
+    }
+    .nav-lists{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
     }
 }
