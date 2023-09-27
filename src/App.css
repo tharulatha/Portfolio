@@ -370,4 +370,14 @@ body {
         width: 70px;
         height: 70px;
     }
+    .profileImg{
+        right: -20vw;
+    }
+    .intro-text{
+        font-size: 40px;
+    }
+    .itroPara{
+        font-size: 12px;
+        
+    }
 }
